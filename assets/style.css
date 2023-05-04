@@ -1,0 +1,97 @@
+:root{
+    --main-color:#EDA3B5;
+    --white-color:#ffffff;
+    --black-color:#1B2437;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+/*Start Nav*/
+nav{
+    position: fixed;
+    top: 0;
+    background-color: var(--white-color);
+    width: 100%;
+}
+nav .container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+nav .container1 .site{
+    font-size: 25px;
+}
+nav .container1 .social{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+nav .container1 .search i{
+    font-size: 25px;
+}
+nav .container2{
+    position: relative;
+    left: 50px;
+    display: flex;
+    padding: 0px 0px 20px 0px;
+    justify-content: center;
+}
+nav .container2 .container{
+    width:500px;
+    display:flex;
+    justify-content: space-between;
+}
+nav .container2 .container a{
+    color:var(--black-color);
+    text-decoration:none;
+    font-size:25px;
+}
+nav .container2 .container a:hover{
+    color: var(--main-color);
+}
+
+/*End Nav*/
+
+
+/*Start Header*/
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url(images/banner-photo-Mask.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    margin-top: 157px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 100px;
+}
+header .container .title{
+    color: var(--white-color);
+    margin: 10px 0px ;
+    font-size: 50px;
+}
+header .container .content{
+    color: var(--white-color);
+    font-size: 16px;
+}
+header .container a{
+    width: 170px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid  #cac1bf;
+    color: var(--white-color);
+    text-decoration: none;
+}
