@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Product</title>
+</head>
+
+<body>
+    <div class="product-main">
+        <div class="viewer">
+          <div class="container">
+            <button class="left-show">
+                <i class="bi bi-caret-left"></i>
+            </button>
+            <div class="image">
+                <img src="assets/images/product_image.png" id="viewer-img" alt="">
+            </div>
+            <button class="right-show">
+                <i class="bi bi-caret-right"></i>
+            </button>
+          </div>
+          <div class="tabview">
+            <img src="assets/images/product_image.png" alt="">
+            <img src="assets/images/product_image1.png" alt="">
+            <img src="assets/images/product_image2.png" alt="">
+            <img src="assets/images/product_image3.png" alt="">
+            <img src="assets/images/product_image4.png" alt="">
+
+          </div>
+        </div>
+        <div class="info">
+            <div class="title">Black Valentino dress with tulle</div>
+            <div class="rate">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+                <span>135 ratings</span>
+            </div>
+            <div class="options-info">
+                <button class="info-btn active">Info</button>
+                <button class="brand-btn">Brand</button>
+                <button class="delivery-btn">Delivery</button>
+            </div>
+            <div class="details">
+                <p class="content content-1 active">Content 1</p>
+                <p class="content content-2">Content 2</p>
+                <p class="content content-3"> Content 3</p>
+            </div>
+            <div class="choose">
+                <div class="size">
+                    <p>Size</p>
+                    <input type="radio" name="size" id="small">
+                    <label for="small" class="radio">S</label>
+                    <input type="radio" name="size" id="meduim">
+                    <label for="meduim" class="radio">M</label>
+                    <input type="radio" name="size" id="large">
+                    <label for="large" class="radio">L</label>
+                </div>
+                <div class="color">
+                    <p>Color</p>
+                    <div class="container">
+                    <input type="radio" name="color" id="red">
+                    <label for="red" class="radio" id="color1"></label>
+                    <input type="radio" name="color" id="green">
+                    <label for="green" class="radio" id="color2"></label>
+                    <input type="radio" name="color" id="blue">
+                    <label for="blue" class="radio" id="color3"></label>
+                  </div>
+                </div>
+            </div>
+            <div class="action">
+                <p><sub>$</sub> 1377</p>
+                <button class="shop">Shop Now</button>
+                <button class="cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
