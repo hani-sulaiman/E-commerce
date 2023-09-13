@@ -547,3 +547,63 @@ main.shop .filter div select{
 .details .content.active{
   display: block;
 }
+/* Default styles for larger screens */
+/* ... Your existing CSS code ... */
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Adjust font size for better readability on mobile */
+  }
+
+  /* Update navigation styles for mobile */
+  nav {
+    height: auto; /* Adjust the navigation height */
+    position: static; /* Remove fixed position */
+    background-color: var(--main-color); /* Change the background color */
+  }
+  nav .container1 {
+    flex-direction: column; /* Stack social and search below the site name */
+    align-items: center; /* Center align items */
+    margin: 20px; /* Adjust margin for better spacing */
+  }
+  nav .container1 .site {
+    font-size: 20px; /* Reduce font size for site name */
+  }
+  nav .container1 .social {
+    width: 100%; /* Make social icons full width */
+    justify-content: center; /* Center align social icons */
+    margin-top: 10px; /* Adjust margin */
+  }
+  nav .container2 {
+    left: 0; /* Reset position */
+    padding: 0; /* Reset padding */
+  }
+  nav .container2 .container {
+    flex-direction: column; /* Stack navigation links for mobile */
+    text-align: center; /* Center align links */
+  }
+  nav .container2 .container a {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  /* Update header styles for mobile */
+  header {
+    margin-top: 20px; /* Adjust margin */
+    height: auto; /* Make header height dynamic */
+    background-image: none; /* Remove background image */
+    text-align: center; /* Center align content */
+  }
+  header .container {
+    margin-left: 0; /* Reset margin */
+    text-align: center; /* Center align text */
+  }
+  header .container .title {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+
+  /* Update other sections and elements as needed for mobile */
+  /* ... Your other responsive styles ... */
+}
